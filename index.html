@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Landing Page</title>
+  <!-- Updated path to the CSS file -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- House Image -->
+    <div class="house-container">
+      <!-- Updated path to the house image -->
+      <img src="assets/images/FranHouse1.jpg" alt="House Illustration" class="house-image">
+      <!-- Flickering light window -->
+      <div class="flickering-window"></div>
+      <!-- Interactive Door -->
+      <div class="interactive-door" onclick="enterHouse()"></div>
+    </div>
+  </div>
+
+  <script>
+    function enterHouse() {
+      window.location.href = 'entrance.html';  // Redirect to the entrance hall page
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  /* Container for the house */
+  .container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* House Image */
+  .house-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Flickering window */
+  .flickering-window {
+    position: absolute;
+    top: 32%; /* Adjust to match window position */
+    left: 42%; /* Adjust to match window position */
+    width: 60px; /* Size of flickering window */
+    height: 60px;
+    background-color: rgba(255, 255, 204, 0.8); /* Light yellow for a warm glow */
+    border-radius: 5px;
+    animation: flicker 1.5s infinite;
+  }
+  
+  /* Keyframes for flickering light */
+  @keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
+  /* Interactive front door */
+  .interactive-door {
+    position: absolute;
+    bottom: 5%; /* Adjust to match door position */
+    left: 45%;  /* Adjust to match door position */
+    width: 80px;
+    height: 150px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+  
+  .interactive-door:hover {
+    border: 2px solid #ff6666; /* Highlight the door when hovered */
+  }
+  
